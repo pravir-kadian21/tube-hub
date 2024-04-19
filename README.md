@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## TubeHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TubeHub is a React project that utilizes YouTube APIs to create a user-friendly platform for browsing and watching YouTube videos. This README will guide you through the setup process and provide an overview of the project structure and features.
 
-## Available Scripts
+# Getting Started
 
-In the project directory, you can run:
+Follow these steps to set up the TubeHub project on your local machine:
 
-### `npm start`
+1. **Clone the Repository**:
+   git clone https://github.com/pravir-kadian21/tube-hub.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Install Dependencies**:
+   cd tubehub
+   npm i
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Set Up YouTube API Key**:
+   Obtain a YouTube API key from the [Google Developers Console](https://console.developers.google.com/). Then, create a `.env` file in the project root directory and add your API key:
 
-### `npm test`
+REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY_HERE
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Start the Development Server**:
+   npm start
 
-### `npm run build`
+5. **Visit the Application**:
+   Open your browser and navigate to `http://localhost:3000` to view the TubeHub application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Home Section**: Lists YouTube videos fetched using the YouTube API.
+- **Sidebar**: Allows users to filter video search based on different criteria.
+- **Search Bar Functionality**: Enables users to search for videos by entering keywords.
+- **Watch Page**: Displays detailed information about a particular video, including comments and other video metadata.
+- **Redux Integration**: Uses Redux for state management to ensure a scalable and maintainable application.
+- **Responsive Design**: Ensures seamless user experience across various devices and screen sizes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/): JavaScript library for building user interfaces.
+- [Redux](https://redux.js.org/): State management library for JavaScript applications.
+- [React Router](https://reactrouter.com/): Declarative routing for React applications.
+- [YouTube Data API](https://developers.google.com/youtube/v3): Access to YouTube's data, including videos, playlists, and channels.
